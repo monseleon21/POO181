@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN</title>
+  <style>
+    /* Estilos CSS para la interfaz de inicio de sesión */
+    body {
+      font-family: 'Times New Roman', Times, serif, sans-serif;
+      background-color: #ffffff;
+    }
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #4a494f;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="password"] 
+    
+    {
+      width: 80%;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #ccc;
+    }
+    
+    input[type="submit"] {
+      width: 30%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: #ffffff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #a1e3a4;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>LOGIN PRUEBA</h2>
+    <form action="procesar_login.php" method="POST">
+      <label for="username">Introduce RFC:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Introduce password:</label>
+      <input type="password" id="password" name="password" required>
+
+      
+      <input type="submit" value="Acceder">
+      
+      
+    </form>
+  </div>
+</body> 
+</html>
