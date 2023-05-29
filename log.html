@@ -1,67 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>LOGIN</title>
   <style>
-    /* Estilos CSS para la interfaz de inicio de sesión */
     body {
-      font-family: 'Times New Roman', Times, serif, sans-serif;
-      background-color: #ffffff;
+      background-image: url("https://cobcm.net/wp-content/uploadssite3/sites/3/2023/03/fern-g08e0a25ac_1280-742x412.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .container {
-      max-width: 400px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #4a494f;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    }
-    h2 {
+    .login-container {
+      background-color: rgba(114, 139, 119, 0.619);
+      padding: 30px;
+      border-radius: 20px;
+      width: 400px;
       text-align: center;
     }
-    label {
-      display: block;
-      margin-bottom: 10px;
-    }
-    input[type="text"],
-    input[type="password"] 
     
-    {
+    .login-container input {
+      margin-bottom: 20px;
+      padding: 10px;
       width: 80%;
-      padding: 10px;
-      border-radius: 3px;
       border: 1px solid #ccc;
+      border-radius: 10px;
     }
     
-    input[type="submit"] {
-      width: 30%;
-      padding: 10px;
-      background-color: #335eae;
-      color: #ffffff;
+    .login-container button {
+      background-color: #314d2e;
+      color: rgb(255, 255, 255);
+      padding: 10px 20px;
       border: none;
-      border-radius: 3px;
+      border-radius: 20px;
       cursor: pointer;
     }
-    input[type="submit"]:hover {
-      background-color: #a1e3a4;
+    
+    .login-container button:hover {
+      background-color: #1B2727;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>LOGIN PRUEBA</h2>
-    <form action="procesar_login.php" method="POST">
-      <label for="username">Introduce RFC:</label>
-      <input type="text" id="username" name="username" required>
-
-      <label for="password">Introduce password:</label>
-      <input type="password" id="password" name="password" required>
-
-      
-      <input type="submit" value="Acceder">
-      
-      
-    </form>
+  <div class="login-container">
+    <h2 style = "color: rgba(255, 255, 255, 0.936);" >LOGIN</h2>
+    <input type="text" placeholder="Ingrese su RFC" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Acceder</button>
   </div>
-</body> 
+</body>
 </html>
